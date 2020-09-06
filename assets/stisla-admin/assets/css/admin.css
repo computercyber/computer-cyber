@@ -1,0 +1,209 @@
+/* ADMIN */
+* {}
+
+
+/* Change this breakpoint if you change the breakpoint of the navbar */
+.animate {
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+/* Other styles for the page not related to the animated dropdown */
+
+
+.card-icon {
+  opacity: .5;
+}
+
+.card-header {
+  border: 0;
+}
+
+.section-header,
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  /* box-shadow: 0px 30px 70px -20px rgba(0, 0, 0, .55) !important; */
+  /* box-shadow: 0 4px 80px rgba(103, 119, 239, .25) !important; */
+}
+
+
+.info-dashboard {
+  background-image: linear-gradient(to bottom right, #C44EBE, #3E4E89) !important;
+}
+
+.info-dashboard:hover {
+  box-shadow: 0px 80px 50px -40px rgba(0, 0, 0, .25);
+  margin-top: 10px;
+}
+
+.news-dashboard {
+  background-image: linear-gradient(to bottom right, #F7CD3B, #F65828) !important;
+}
+
+.news-dashboard:hover {
+  box-shadow: 0px 80px 50px -40px rgba(0, 0, 0, .25);
+  margin-top: 10px;
+}
+
+.gallery-dashboard {
+  background-image: linear-gradient(to bottom right, #26F09E, #00B4E1) !important;
+}
+
+.gallery-dashboard:hover {
+  box-shadow: 0px 80px 50px -40px rgba(0, 0, 0, .25);
+  margin-top: 10px;
+}
+
+.anggota-dashboard {
+  background-image: linear-gradient(to bottom right, #ED8FFD, #5DBFFE) !important;
+}
+
+.anggota-dashboard:hover {
+  box-shadow: 0px 80px 50px -40px rgba(0, 0, 0, .25);
+  margin-top: 10px;
+}
+
+.info-dashboard,
+.news-dashboard,
+.gallery-dashboard,
+.anggota-dashboard {
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0px 30px 70px -20px rgba(0, 0, 0, .55);
+  margin-top: 20px;
+  padding: 0;
+  transition: .4s;
+}
+
+.card-latestpost-dashboard {
+  min-height: 353px;
+  box-shadow: 0px 30px 70px -20px rgba(0, 0, 0, .35);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-card-latestpost-dashboard {
+  box-shadow: none;
+  border-radius: 40px;
+}
+
+
+/* CARD EVENT */
+.card-event {
+  margin-top: 10px;
+  transition: .4s;
+  box-shadow: 0px 30px 70px -20px rgba(0, 0, 0, .55);
+  background-image: linear-gradient(to bottom right, #009688, rgba(36, 44, 67, 0.897)) !important;
+  color: white !important;
+  font-family: 'Montserrat', sans-serif !important;
+  min-height: 360px;
+  border: 0;
+}
+
+.img-card-event {
+  position: absolute;
+  width: 70%;
+  top: 114px;
+  bottom: 0;
+  left: 150px;
+  right: 0;
+  box-shadow: none;
+  filter: brightness(65%);
+}
+
+.card-event:hover {
+  box-shadow: 0px 80px 50px -40px rgba(0, 0, 0, .25);
+  margin-top: 0px;
+}
+
+.card-event nav h5 {
+  font-weight: 500 !important;
+}
+
+.card-event .card-event-title {
+  font-weight: 700 !important;
+  margin-top: 20px;
+}
+
+.btn-event-detail {
+  background-color: #ffc107;
+  border: #ffc107;
+  border-radius: 40px;
+  box-shadow: none;
+  text-transform: uppercase;
+  font-size: 10px;
+  width: 125px;
+  transition: .3s;
+}
+
+.btn-event-detail:hover {
+    opacity: .9;
+    background-color: #ffc107 !important;
+}
+
+.card-footer .btn-event-detail:hover,
+.btn-event-detail:active,
+.btn-event-detail:focus,
+.btn-event-detail:focus-visible,
+.btn-event-detail:checked {
+  background-color: #ffc107 !important;
+  border: #ffc107 !important;
+}
+
+nav,
+.card-body,
+.card-footer {
+  z-index: 999;
+}
+
+/* END CARD */
+
+
+/* Gallery Dashboard */
+.btn-gallery-detail {
+    box-shadow: none;
+    border-radius: 40px;
+    background-color: transparent;
+    color: #00B4E1;
+    transition: .4s;
+}
+/* End Gallery */
