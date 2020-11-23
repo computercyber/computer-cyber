@@ -23,10 +23,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-
-// $config['base_url'] = 'http://fw1.sshreach.me:13913/computer-cyber/';
 $config['base_url'] = "http://localhost/computer-cyber/";
-// $config['base_url'] = ROOT_PATH;
 
 /*
 |--------------------------------------------------------------------------

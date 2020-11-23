@@ -57,9 +57,10 @@
         width: 15%;
     }
 
+    /* 
     .img-kadiv {
-        /* box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, .1); */
-    }
+        box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, .1);
+    } */
 
 
     @media (max-width: 575.98px) {
@@ -129,7 +130,7 @@
 </div>
 
 <section class="section-detail">
-    <div class="container">
+    <!-- <div class="container">
         <?php if (!empty($ketua_divisi)) { ?>
             <div class="jumbotron jumbotron-fluid jumbotron-kadiv" style="background:none">
                 <div class="text-center">
@@ -140,83 +141,83 @@
             </div>
         <?php } else { ?>
             <h6 class="text-center mb-5">Belum ada ketua divisi dipilih tahun kepengurusan ini.</h6>
-        <?php } ?>
+        <?php } ?> -->
 
 
-        <div class="row row-detail-divisi">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-body">
-                        <h3>Detail Divisi</h3>
-                        <?php if (!empty($divisi)) { ?>
-                            <?php echo $divisi['keterangan_divisi']; ?>
-                        <?php } else { ?>
-                            <h6 class="ml-3">Belum ada detail untuk divisi ini.</h6>
-                        <?php } ?>
-
-                        <h3 class="mt-5">Gallery Divisi</h3>
-                        <div class="row mt-4">
-                            <?php if (!empty($gallery_divisi)) { ?>
-                                <?php foreach ($gallery_divisi as $gd) : ?>
-                                    <div class="col-md-4">
-                                        <a href="javascript:;" data-toggle="modal" data-target="#showModal">
-                                            <img class="gallery-divisi rounded modal-gallery-divisi" src="<?= ($gd->gambar != null and $gd->gambar != 'img_placeholder.png') ? base_url('assets/upload/image/' . $gd->gambar) : base_url('assets/img/profile_placeholder.png') ?>" class="" alt="gallery-<?= $gd->judul_gallery ?>" width="240px">
-                                        </a>
-                                    </div>
-                                <?php endforeach; ?>
-                            <?php } else { ?>
-                                <h6 class="ml-3">Belum ada gallery untuk divisi ini.</h6>
-                            <?php } ?>
-                        </div>
-                        <div class="text-center">
-                            <div class="btn btn-outline-primary mx-auto mt-3">More</div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card card-anggota bg-default mb-3">
-                    <div class="card-header ">Daftar Anggota Aktif</div>
-                    <?php foreach ($anggota_aktif as $a_aktif) : ?>
-                        <div class="card-body border-bottom p-2">
-
-                            <div class="d-inline-block align-middle ml-1">
-                                <img class="img-radius rounded-circle  align-top m-r-15 mr-2" src="<?= ($a_aktif->gambar != null and $a_aktif->gambar != 'profile_placeholder.png') ? base_url('assets/upload/image/' . $a_aktif->gambar) : base_url('assets/img/profile_placeholder.png') ?>" width="50" height="50">
-                                <div class="d-inline-block mt-2"><?= $a_aktif->nama_anggota; ?>
-                                </div>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
-
-                    <?php if ($this->db->get_where('anggota', array('id_divisi' => $divisi['id_divisi']))->num_rows() > 1) { ?>
-                        <a href="<?php echo site_url('divisi/' . $url . '?anggota=all') ?>" class="btn btn-outline-primary mx-auto mt-3 mb-3">More</a>
-                    <?php } ?>
-                </div>
-
-
-                <div class="card card-anggota bg-default mb-3">
-                    <div class="card-header ">Hasil Karya Divisi</div>
-                    <?php if (!empty($karya_divisi)) { ?>
-                        <?php foreach ($karya_divisi as $kd) : ?>
-                            <div class="card-body border-bottom p-2">
-                                <img src="<?= ($kd->gambar_karya != null and $kd->gambar_karya != 'img_placeholder.png') ? base_url('assets/upload/image/' . $kd->gambar_karya) : base_url('assets/img/img_placeholder.png') ?>" class="img-fluid rounded mr-2" alt="img-karya-<?= $kd->judul_karya; ?>" width="80" height="">
-                                <a href="<?= site_url('karya/' . $kd->url) ?>" target="_blank" rel="noopener noreferrer"><?= $kd->judul_karya; ?></a>
-                            </div>
-                        <?php endforeach; ?>
+    <div class="row row-detail-divisi">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Detail Divisi</h3>
+                    <?php if (!empty($divisi)) { ?>
+                        <?php echo $divisi['keterangan_divisi']; ?>
                     <?php } else { ?>
-                        <div class="card-body border-bottom p-2">
-                            <h6 class="ml-2 mt-2">Belum ada karya dipublish.</h6>
-                        </div>
+                        <h6 class="ml-3">Belum ada detail untuk divisi ini.</h6>
+                    <?php } ?>
 
-                    <?php } ?>
-                    <?php if ($this->db->get_where('karya', array('karya_divisi' => $divisi['id_divisi']))->num_rows() >= 1) { ?>
-                        <a href="<?php echo site_url('karya?divisi=' . $url) ?>" class="btn btn-outline-primary mx-auto mt-3 mb-3">More</a>
-                    <?php } ?>
+                    <h3 class="mt-5">Gallery Divisi</h3>
+                    <div class="row mt-4">
+                        <?php if (!empty($gallery_divisi)) { ?>
+                            <?php foreach ($gallery_divisi as $gd) : ?>
+                                <div class="col-md-4">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#showModal">
+                                        <img class="gallery-divisi rounded modal-gallery-divisi" src="<?= ($gd->gambar != null and $gd->gambar != 'img_placeholder.png') ? base_url('assets/upload/image/' . $gd->gambar) : base_url('assets/img/profile_placeholder.png') ?>" class="" alt="gallery-<?= $gd->judul_gallery ?>" width="240px">
+                                    </a>
+                                </div>
+                            <?php endforeach; ?>
+                        <?php } else { ?>
+                            <h6 class="ml-3">Belum ada gallery untuk divisi ini.</h6>
+                        <?php } ?>
+                    </div>
+                    <div class="text-center">
+                        <div class="btn btn-outline-primary mx-auto mt-3">More</div>
+                    </div>
+
                 </div>
             </div>
         </div>
+
+        <div class="col-md-4">
+            <div class="card card-anggota bg-default mb-3">
+                <div class="card-header ">Daftar Anggota Aktif</div>
+                <?php foreach ($anggota_aktif as $a_aktif) : ?>
+                    <div class="card-body border-bottom p-2">
+
+                        <div class="d-inline-block align-middle ml-1">
+                            <img class="img-radius rounded-circle  align-top m-r-15 mr-2" src="<?= ($a_aktif->gambar != null and $a_aktif->gambar != 'profile_placeholder.png') ? base_url('assets/upload/image/' . $a_aktif->gambar) : base_url('assets/img/profile_placeholder.png') ?>" width="50" height="50">
+                            <div class="d-inline-block mt-2"><?= $a_aktif->nama_anggota; ?>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+
+                <?php if ($this->db->get_where('anggota', array('id_divisi' => $divisi['id_divisi']))->num_rows() > 1) { ?>
+                    <a href="<?php echo site_url('divisi/' . $url . '?anggota=all') ?>" class="btn btn-outline-primary mx-auto mt-3 mb-3">More</a>
+                <?php } ?>
+            </div>
+
+
+            <div class="card card-anggota bg-default mb-3">
+                <div class="card-header ">Hasil Karya Divisi</div>
+                <?php if (!empty($karya_divisi)) { ?>
+                    <?php foreach ($karya_divisi as $kd) : ?>
+                        <div class="card-body border-bottom p-2">
+                            <img src="<?= ($kd->gambar_karya != null and $kd->gambar_karya != 'img_placeholder.png') ? base_url('assets/upload/image/' . $kd->gambar_karya) : base_url('assets/img/img_placeholder.png') ?>" class="img-fluid rounded mr-2" alt="img-karya-<?= $kd->judul_karya; ?>" width="80" height="">
+                            <a href="<?= site_url('karya/' . $kd->url) ?>" target="_blank" rel="noopener noreferrer"><?= $kd->judul_karya; ?></a>
+                        </div>
+                    <?php endforeach; ?>
+                <?php } else { ?>
+                    <div class="card-body border-bottom p-2">
+                        <h6 class="ml-2 mt-2">Belum ada karya dipublish.</h6>
+                    </div>
+
+                <?php } ?>
+                <?php if ($this->db->get_where('karya', array('karya_divisi' => $divisi['id_divisi']))->num_rows() >= 1) { ?>
+                    <a href="<?php echo site_url('karya?divisi=' . $url) ?>" class="btn btn-outline-primary mx-auto mt-3 mb-3">More</a>
+                <?php } ?>
+            </div>
+        </div>
+    </div>
     </div>
 </section>
 

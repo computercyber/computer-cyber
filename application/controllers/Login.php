@@ -18,7 +18,7 @@ class Login extends CI_Controller
 		}
 
 		$data = array('title' => 'Login Administrator',);
-		$this->load->view('admin/login_view', $data);
+		$this->load->view('admin_v2/login_view', $data);
 	}
 
 	public function logout()
@@ -26,7 +26,3 @@ class Login extends CI_Controller
 		$this->simple_login->logout();
 	}
 }
-
-/* Created by : @BerthoErizal 2017, @DimasNugrohoPutro 2018 */
-/* Support by : @SulthanSHP 2018, @RajaAziyan 2018 */
-/* From Divisi : Web Programming */

@@ -95,9 +95,9 @@
 	}
 
 	@media (min-width: 992px) {
-		/* .timeline-panel {
+		.timeline-panel {
 			margin-top: 50px;
-		} */
+		}
 	}
 </style>
 
@@ -179,20 +179,20 @@
 							</div>
 						</div>
 					</li>
-					<!-- <li>
-						<div class="timeline-image">
-							<img class="img-fluid icon-timeline" src="<?php echo base_url('assets'); ?>/icon/welcome.png" alt="">
+					<li>
+						<div class="timeline-image bg-registration">
+							<img class="img-fluid icon-timeline">
 						</div>
 						<div class="timeline-panel">
 							<div class="timeline-heading">
-								<h5 class="text-primary">Coming Soon!</h5>
-								<h4 class="subheading">Penyambutan anggota baru Computer Cyber</h4>
+								<h5>20 Oktober 2020</h5>
+								<h4 class="subheading">Kepengurusan Tahun 2020/2021</h4>
 							</div>
 							<div class="timeline-body">
-								<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+								<p class="text-muted">Pada 25 Juni 2020 dilakukanlah Musyawarah Besar untuk memilih Kepengurusan untuk tahun 2020/2021, dan disepakatilah hasil akhir yaitu Ketua <strong>Christoper Ray Manurung</strong> dan Wakil <strong>Dendi</strong></p>
 							</div>
 						</div>
-					</li> -->
+					</li>
 					<li>
 						<div class="timeline-image bg-registration">
 							<h4>Inilah
@@ -205,43 +205,6 @@
 		</div>
 	</div>
 </section>
-
-<!-- <div id="gtco-history" class="gtco-section border-bottom animate-box">
-	<div class="gtco-container">
-
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-				<h2>Tentang Computer Cyber</h2>
-			</div>
-		</div>
-
-		<div class="row row-pb-md">
-			<div col-md-12>
-				<p><?php echo $site->about ?></p>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-12">
-				<h3>See The Photos</h3>
-			</div>
-			<div class="col-md-12">
-				<div class="owl-carousel owl-carousel-fullwidth">
-					<div class="item">
-						<img src="<?php echo base_url('assets/upload/image/' . $site->gambar_about); ?>" alt="Gambar Computer Cyber">
-					</div>
-					<?php foreach ($gallery_about as $gallery_about) : ?>
-						<div class="item">
-							<img src="<?php echo base_url('assets/upload/image/' . $gallery_about->gambar); ?>" alt="Gambar Computer Cyber">
-						</div>
-					<?php endforeach ?>
-				</div>
-			</div>
-		</div>
-
-
-	</div>
-</div> -->
 
 <!-- INformasi-->
 <section class="page-section" id="services">

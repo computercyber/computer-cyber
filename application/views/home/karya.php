@@ -88,7 +88,7 @@
     <div class="container text-center">
         <h1 class="display-4 text-center heading-menu"><?php echo $title_sub ?></h1>
         <p class="lead text-center subheading-menu"><a href="<?php echo base_url(); ?>" target="_blank"><?php echo $title ?> Study Club</a></p>
-        <a href="" class="btn btn-outline-primary">Masukan Karya Saya</a>
+        <!-- <a href="" class="btn btn-outline-primary">Masukan Karya Saya</a> -->
     </div>
 </div>
 

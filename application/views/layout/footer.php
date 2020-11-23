@@ -34,21 +34,11 @@ $site_config = $this->konfigurasi_model->listing();
 
 			<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 				<h6 class="text-uppercase font-weight-bold mb-3 footer-title">Address</h6>
-				<!-- <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border-color: #8D00DC;"> -->
 				<p><?php echo $site_config->alamat; ?></p>
 			</div>
 
-			<!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-				<h6 class="text-uppercase font-weight-bold">Website</h6>
-				<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border-color: #8D00DC;">
-				<p>
-					<a href="https://umrah.ac.id" target="_blank">Universitas Maritim Raja Ali Haji</a>
-				</p>
-			</div> -->
-
 			<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 				<h6 class="text-uppercase font-weight-bold mb-3 footer-title">Bantuan</h6>
-				<!-- <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border-color: #8D00DC;"> -->
 				<p class="footer-link">
 					<a href="https://umrah.ac.id" target="_blank">Bantuan</a>
 				</p>
@@ -65,7 +55,6 @@ $site_config = $this->konfigurasi_model->listing();
 
 			<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 				<h6 class="text-uppercase font-weight-bold mb-3 footer-title">Website</h6>
-				<!-- <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border-color: #8D00DC;"> -->
 				<p class="footer-link">
 					<a href="https://umrah.ac.id" target="_blank">Jetskill</a>
 				</p>
@@ -79,7 +68,6 @@ $site_config = $this->konfigurasi_model->listing();
 
 			<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 				<h6 class="text-uppercase font-weight-bold mb-3 footer-title">Contact</h6>
-				<!-- <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border-color: #8D00DC;"> -->
 				<p class="footer-link">
 					<i class="fas fa-envelope mr-3 text-muted"></i><?php echo $site_config->email; ?></p>
 				<p class="footer-link">
@@ -113,26 +101,6 @@ $site_config = $this->konfigurasi_model->listing();
 </footer>
 <!-- Footer -->
 
-<!-- WhatsHelp.io widget -->
-<!-- <script type="text/javascript">
-    (function () {
-        var options = {
-            whatsapp: "+6285658553529", // WhatsApp number
-            call_to_action: "Tanya kami", // Call to action
-            position: "right", // Position may be 'right' or 'left'
-        };
-        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
-</script> -->
-<!-- /WhatsHelp.io widget -->
-
-<!-- Disqus -->
-<!-- <script id="dsq-count-scr" src="//computer-cyber.disqus.com/count.js" async></script> -->
-
-
 <script>
 	feather.replace()
 </script>
@@ -150,8 +118,6 @@ $site_config = $this->konfigurasi_model->listing();
 
 <!-- Custom scripts for this template -->
 <script src="<?php echo base_url(); ?>assets/agency/js/agency.js"></script>
-
-
 
 </body>
 

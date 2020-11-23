@@ -15,7 +15,7 @@ $site_config = $this->konfigurasi_model->listing();
 	<meta name="author" content="<?php echo $site_config->namaweb ?>" />
 
 	<!-- favicon -->
-	<!-- <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/img/favicon/CC_logo_remake.png" type="image/x-icon"> -->
+	<link rel="shortcut icon" href="<?php echo base_url(); ?>assets/img/favicon/CC_logo_remake.png" type="image/x-icon">
 
 	<!-- <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'> -->
 
@@ -82,7 +82,6 @@ $site_config = $this->konfigurasi_model->listing();
 
 	<style>
 		[class=text-hide] {
-			/* background-image: url('https://getbootstrap.com/docs/4.4/assets/brand/bootstrap-solid.svg'); */
 			background-image: url('http://localhost/computer-cyber/assets/img/icon/CC.svg');
 			/* width: 20px;
 			height: 20px; */
@@ -113,23 +112,15 @@ $site_config = $this->konfigurasi_model->listing();
 		.navbar-brand {
 			font-size: 18px;
 		}
-
-		@media (min-width: 992px) {
-			.border-karya {}
-		}
 	</style>
 
 	<?php if ($this->uri->segment(1) == "") { ?>
 
 		<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
 			<div class="container">
-				<!-- <a class="navbar-brand" href="<?php echo site_url('/') ?>">
-				<h1 class="text-hide">Computer Cyber</h1>
-			</a> -->
 				<a class="navbar-brand js-scroll-trigger" href="<?php echo site_url('/'); ?>">
 					Computer Cyber
 				</a>
-
 				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 					Menu
 					<i class="fas fa-bars"></i>
@@ -191,9 +182,9 @@ $site_config = $this->konfigurasi_model->listing();
 																		echo "active";
 																	} ?>" href="<?php echo site_url('about'); ?>">About US</a>
 						</li>
-						<li class="nav-link">
+						<!-- <li class="nav-link">
 							<a class="btn btn-sm js-scroll-trigger join mt-1 text-white text-decoration-none" href="http://localhost/register/" target="_blank">Join Us</a>
-						</li>
+						</li> -->
 					</ul>
 				</div>
 			</div>
@@ -268,9 +259,9 @@ $site_config = $this->konfigurasi_model->listing();
 																		echo "active";
 																	} ?>" href="<?php echo site_url('about'); ?>">About US</a>
 						</li>
-						<form class="form-inline">
+						<!-- <form class="form-inline">
 							<a href="http://localhost/register/" target="_blank" class="join btn btn-sm btn-outline-secondary text-uppercase border-0" type="button" style="background-color: #1C45EF">Join us</a>
-						</form>
+						</form> -->
 					</ul>
 				</div>
 			</div>

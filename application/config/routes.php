@@ -52,18 +52,23 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $route['default_controller'] = 'home';
 $route['404_override'] = 'oops';
 $route['translate_uri_dashes'] = TRUE;
+
 // route untuk url berita
 $route['berita'] = 'berita/index';
 $route['berita/(:any)'] = 'berita/detail/$1';
+
 // route untuk url artikel
 $route['artikel'] = 'artikel/index';
 $route['artikel/(:any)'] = 'artikel/detail/$1';
+
 // route untuk url divisi
 $route['divisi'] = 'divisi/index';
 $route['divisi/(:any)'] = 'divisi/detail/$1';
+
 // route untuk url karya
 $route['karya'] = 'karya/index';
 $route['karya/(:any)'] = 'karya/detail/$1';
+
 // route untuk kepengurusan
 $route['pengurus'] = 'pengurus/index';
 $route['pengurus/(:any)'] = 'pengurus/pengurus_anggota/$1';
