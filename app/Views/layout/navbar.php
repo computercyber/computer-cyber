@@ -25,7 +25,7 @@
                     </div>
                     <div class="col-6">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Karya</a>
+                            <a class="nav-link <?= (url_title('Karya') == $title) ? 'active' : '' ?>" href="<?= base_url('karya'); ?>">Karya</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -49,7 +49,7 @@
                     <a class="nav-link <?= (url_title('Devision') == $title) ? 'active' : '' ?>" href="<?= base_url('devisi'); ?>">Divisi</a>
                 </li>
                 <li class="nav-item d-none d-lg-block">
-                    <a class="nav-link" href="#">Karya</a>
+                    <a class="nav-link <?= (url_title('Karya') == $title) ? 'active' : '' ?>" href="<?= base_url('karya'); ?>">Karya</a>
                 </li>
                 <li class="nav-item dropdown d-none d-lg-block">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">

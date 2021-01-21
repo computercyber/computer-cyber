@@ -6,8 +6,6 @@ class Devisi extends BaseController
 {
     public function index()
     {
-        // dd(url_title('devision'));
-
         $data = [
             'title' => 'Devision'
         ];
