@@ -10,6 +10,6 @@ class Home extends BaseController
 			'title' => 'Computer Cyber'
 		];
 
-		return view('layout/index', $data);
+		return view('home/index', $data);
 	}
 }

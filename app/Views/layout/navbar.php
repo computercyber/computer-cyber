@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
     <div class="container-fluid">
 
         <a class="navbar-brand" href="<?= base_url(); ?>">Computer Cyber</a>
@@ -14,10 +14,10 @@
                 <div class="row mt-2 d-lg-none text-center">
                     <div class="col-6">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link <?= (uri_string() == '/') ? 'active' : '' ?>" href="<?= base_url(); ?>">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Divisi</a>
+                            <a class="nav-link <?= (url_title('Devision') == $title) ? 'active' : '' ?>" href="<?= base_url('devisi'); ?>">Divisi</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About Us</a>
@@ -43,10 +43,10 @@
                 <!-- end mobile navbar -->
 
                 <li class="nav-item d-none d-lg-block">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link <?= (uri_string() == '/') ? 'active' : '' ?>" href="<?= base_url(); ?>">Home</a>
                 </li>
                 <li class="nav-item d-none d-lg-block">
-                    <a class="nav-link" href="#">Divisi</a>
+                    <a class="nav-link <?= (url_title('Devision') == $title) ? 'active' : '' ?>" href="<?= base_url('devisi'); ?>">Divisi</a>
                 </li>
                 <li class="nav-item d-none d-lg-block">
                     <a class="nav-link" href="#">Karya</a>

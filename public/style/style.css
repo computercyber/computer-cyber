@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css");
+@import url("https://unpkg.com/aos@next/dist/aos.css");
 /* font poppins 500 px medium  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
 
@@ -15,6 +16,33 @@ body {
 .btn-primary:hover {
   background-color: white;
   color: #5e31c2;
+}
+
+.btn-welcome {
+  background-image: linear-gradient(to right, #6771e6, #5e31c2);
+  font-weight: 500;
+  width: 40%;
+  border-radius: 50px;
+  border: none;
+}
+
+.btn-welcome:hover {
+  background-color: #2e2655;
+  color: white;
+  opacity: 0.9;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.tengah {
+  margin-top: 10%;
 }
 
 /* navigasi css */
