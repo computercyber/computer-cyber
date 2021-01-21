@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row text-center home">
             <div class="col-sm-12 col-md-6" data-aos="fadeInUp">
-                <img src="<?= base_url(); ?>/images/home.png" alt="home" width="100%">
+                <img src="<?= base_url(); ?>/images/assets/home.png" alt="home" width="100%">
             </div>
             <div class="col-sm-12 col-md-6 tengah" data-aos="fadeInUp">
                 <h5>Welcome To Our Community!</h5>
